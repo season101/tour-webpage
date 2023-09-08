@@ -1,6 +1,11 @@
-const url = 'https://course-api.com/react-tours-project';
-
+import Tours from './Tours';
 const App = () => {
-  return <h2>Tours Starter</h2>;
+  const url = 'https://course-api.com/react-tours-project';
+  return (
+    <>
+      <h1>Our Tours</h1>
+      <Tours url={url} />
+    </>
+  );
 };
 export default App;
